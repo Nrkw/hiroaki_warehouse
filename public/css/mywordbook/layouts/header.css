@@ -1,0 +1,46 @@
+.header
+{
+    width: 100vw;
+
+   /* text-align: center;*/
+    z-index: 5;
+}
+
+.relative
+{
+    position: relative;;
+}
+.translucent
+{
+    opacity: 0.3;
+}
+.absolute
+{
+    position: absolute;
+}
+@media screen and (max-width: 800px)
+{
+    .headline-overlay
+    {
+        top: 0;
+        right: 20%;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 801px)
+{
+    .headline-overlay
+    {
+        top: 40%;
+
+        right: 40%;
+    }
+
+}
+
+
+
+.fit
+{
+    width: 100vw;
+}

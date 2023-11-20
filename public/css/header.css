@@ -1,0 +1,35 @@
+.header
+{
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.header > div > div
+{
+    position: absolute;
+    top: 200px;
+    right: 45vw;
+    
+
+}
+.header > div > img
+{
+    position: relative;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.header-menu-div
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #84c1ff;
+}
+.header-menu-a
+{
+    text-decoration: none;
+    padding-left: 100px;
+    font-size: 25px;
+    color: blue;
+}

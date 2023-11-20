@@ -1,0 +1,58 @@
+body
+{
+    background-color: #dbedff;  
+}
+.useradd
+{
+    text-align: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.useradd > input
+{
+    font-size: 2rem;
+}
+
+input[type="text"], input[type="password"]
+{
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.role
+{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.role > *
+{
+    margin-left: 1rem;
+}
+input[type="radio"]
+{
+    transform: scale(2);
+}
+p
+{
+    font-size: 1.5rem;
+}
+
+#isokay
+{
+    font-size: 1.4rem;
+}
+
+#submit-button
+{
+    margin: auto;
+    border-radius: 1.5rem;
+
+    border: solid 1px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+/*    border: solid 2px black;*/
+    font-size: 2rem;
+}

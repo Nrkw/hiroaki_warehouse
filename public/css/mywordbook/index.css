@@ -1,0 +1,211 @@
+
+th, td
+{
+    border: solid 1px;
+}
+table
+{
+    width: 100vw;
+    border: solid 4px;
+}
+
+tr.words:nth-child(2n+1)
+{
+    /*
+    background-color: #ccffcc;
+    */
+    /*
+    background-color: #84ff84;
+    */
+    background-color: #dbffdb;
+}
+
+tr.headline
+{
+    background-color: #7fbfff;
+}
+
+@media screen and (max-width: 600px)
+{
+    th, td
+    {
+        font-size: 20px;
+    }
+    .word-fontsize
+    {
+        font-size: 25px;
+    }
+    .word-fontsize-bigger
+    {
+        font-size: 28px;
+    }
+
+    .word-fotnsize-smaller
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 601px)
+{
+    th, td
+    {
+        font-size: 30px;
+    }
+
+    .word-fontsize
+    {
+        font-size: 35px;
+    }
+    .word-fontsize-bigger
+    {
+        font-size: 40px;
+    }
+    .word-fontsize-smaller
+    {
+        font-size: 25px;
+    }
+}
+.container
+{
+
+}
+#addword
+{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    border: solid 5px;
+    border-color: brown;
+}
+
+/*
+    この下の二つは編集しない。
+*/
+.addword-dialog
+{
+    display: none;
+}
+.addword-dialog:target
+{
+    display: flex;
+}
+/*
+    この下の二つは編集可。
+*/
+.addword-dialog
+{
+    text-align: left;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+.addword-dialog:target
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    cursor: default;
+  }
+.close
+{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+.addword-content
+{
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    z-index: 20;
+    flex-direction: column;
+}
+.submit-button
+{
+    font-size: 2rem;
+}
+
+.candidate
+{
+    background-color: white;
+    width: 100%;
+}
+
+
+/*
+    以下、歯車スタイル
+*/
+
+*{
+    box-sizing: border-box;
+}
+.outer{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.iconGear,
+.iconGear:before,
+.iconGear:after,
+.iconGear div:before{
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    content: '';
+    background-color: #aaa;
+    border-radius: 1px;
+}
+.iconGear{
+    top: 5px;
+    left: 13px;
+}
+.iconGear:before{
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+}
+.iconGear:after {
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}
+.iconGear div:before{
+    top: -2px;
+    left: 6px;
+    transform: rotate(90deg);
+ }
+.iconGear div{
+    position: absolute;
+    top: 2px;
+    left: -6px;
+    width: 16px;
+    height: 16px;
+    background-color: #aaa;
+    border-radius: 50%;
+    z-index: 5;
+ }
+.iconGear div:after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}

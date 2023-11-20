@@ -1,0 +1,31 @@
+.container
+{
+    text-align: center;
+}
+
+.head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.headname
+{
+    font-size: 1.5rem;
+}
+
+.headimg
+{
+    height: 64px;
+    width: 64px;
+}
+
+.introduction
+{
+    font-size: 1.5rem;
+}
+
+.profile
+{
+    font-size: 1.6rem;
+}

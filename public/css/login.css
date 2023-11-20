@@ -1,0 +1,25 @@
+body
+{
+    background-color: #dbedff;  
+}
+.login-form
+{
+    display: flex;
+    flex-direction: column;
+}
+.login-form > *
+{
+    margin: auto;
+    font-size: 1.6rem;
+}
+input[type="text"], input[type="password"]
+{
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+input[type="submit"]
+{
+    margin-top: 3rem;
+}
